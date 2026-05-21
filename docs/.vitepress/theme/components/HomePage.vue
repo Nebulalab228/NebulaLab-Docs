@@ -3,11 +3,13 @@ import { computed, h, onMounted, onUnmounted, ref } from 'vue'
 import { useData, withBase } from 'vitepress'
 import { useNebulaPreferences } from '../composables/preferences'
 
-const releaseUrl = 'https://github.com/TshyGO/NebulaLab-Releases/releases/latest'
+const releasesApiUrl = 'https://api.github.com/repos/TshyGO/NebulaLab-Releases/releases?per_page=20'
+const stableReleaseUrl = 'https://github.com/TshyGO/NebulaLab-Releases/releases/latest'
+const betaReleaseFallbackUrl = 'https://github.com/TshyGO/NebulaLab-Releases/releases?q=prerelease%3Atrue'
 
-const { theme, isDark } = useData()
-const appVersion = computed(() => theme.value.appVersion || '')
+const { isDark } = useData()
 const { language: selectedLanguage, initPreferences } = useNebulaPreferences()
+const betaReleaseUrl = ref(betaReleaseFallbackUrl)
 
 const iconShapes = {
   import: [
@@ -182,12 +184,12 @@ const showcaseSlides = [
 const copy = {
   en: {
     badge: 'Scientific workflow workspace',
-    version: 'Latest release',
     heroTitle: 'Nebula Lab',
     heroAccent: 'Link samples, workflows, and results today. Experiment records are planned next.',
     heroLead:
       'Nebula Lab is a desktop workspace for experimental work. Today it handles grouped instrument files, reusable workflows, Origin export, plugins, and community resources. Recipes, experiment records, and searchable databases are planned next.',
-    primaryCta: 'Download for Windows',
+    betaCta: 'Download beta',
+    stableCta: 'Download stable',
     secondaryCta: 'Read the manual',
     proof: ['Grouped samples', 'Reusable workflows', 'Recipes (planned)', 'Records (planned)', 'Plugin ecosystem'],
     heroPanelTitle: 'Workspace layers',
@@ -356,11 +358,11 @@ const copy = {
   },
   zh: {
     badge: '实验流程工作台',
-    version: '最新版本',
     heroTitle: 'Nebula Lab',
     heroAccent: '当前先串起样品、流程和结果，实验记录在下一步规划中。',
     heroLead: 'Nebula Lab 是面向实验工作的桌面工作台。当前支持成组仪器文件、可复用处理流程、Origin 导出、插件和社区资源。配方、实验记录和可检索数据库在规划中。',
-    primaryCta: '下载 Windows 版',
+    betaCta: '下载测试版',
+    stableCta: '下载稳定版',
     secondaryCta: '阅读用户手册',
     proof: ['成组样品', '流程复用', '配方（规划中）', '记录（规划中）', '插件生态'],
     heroPanelTitle: '能力一览',
@@ -513,13 +515,36 @@ const copy = {
 }
 
 const t = computed(() => copy[selectedLanguage.value])
-const releaseText = computed(() =>
-  appVersion.value ? `${t.value.version} ${appVersion.value}` : t.value.version
-)
 const showcaseActive = ref(0)
 const reduceMotion = ref(false)
 let showcaseTimer
 let revealObserver
+
+async function fetchLatestBetaReleaseUrl() {
+  try {
+    const res = await fetch(releasesApiUrl, {
+      headers: { Accept: 'application/vnd.github+json' }
+    })
+    if (!res.ok) return betaReleaseFallbackUrl
+
+    const releases = await res.json()
+    if (!Array.isArray(releases)) return betaReleaseFallbackUrl
+
+    const latestBeta = releases.find((release) => {
+      const assets = Array.isArray(release.assets) ? release.assets : []
+      return (
+        release?.prerelease &&
+        !release?.draft &&
+        release?.tag_name !== 'beta-channel' &&
+        assets.some((asset) => /windows-x64-setup\.exe$/i.test(asset?.name || ''))
+      )
+    })
+
+    return typeof latestBeta?.html_url === 'string' ? latestBeta.html_url : betaReleaseFallbackUrl
+  } catch {
+    return betaReleaseFallbackUrl
+  }
+}
 
 function getShowcasePosition(index) {
   const last = showcaseSlides.length - 1
@@ -596,6 +621,9 @@ function setupRevealAnimations() {
 onMounted(() => {
   initPreferences()
   reduceMotion.value = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  fetchLatestBetaReleaseUrl().then((url) => {
+    betaReleaseUrl.value = url
+  })
   startShowcase()
   setupRevealAnimations()
 })
@@ -615,8 +643,11 @@ onUnmounted(() => {
         <p class="nl-hero-accent">{{ t.heroAccent }}</p>
         <p class="nl-lead">{{ t.heroLead }}</p>
         <div class="nl-actions" aria-label="Primary actions">
-          <a class="nl-btn nl-btn-primary" :href="releaseUrl" target="_blank" rel="noreferrer">
-            {{ t.primaryCta }}
+          <a class="nl-btn nl-btn-primary" :href="betaReleaseUrl" target="_blank" rel="noreferrer">
+            {{ t.betaCta }}
+          </a>
+          <a class="nl-btn nl-btn-stable" :href="stableReleaseUrl" target="_blank" rel="noreferrer">
+            {{ t.stableCta }}
           </a>
           <a class="nl-btn nl-btn-secondary" :href="withBase('/manual/')">
             {{ t.secondaryCta }}
@@ -625,7 +656,6 @@ onUnmounted(() => {
         <div class="nl-proof-row" aria-label="Product capabilities">
           <span v-for="item in t.proof" :key="item">{{ item }}</span>
         </div>
-        <p class="nl-release-line">{{ releaseText }}</p>
       </div>
 
       <div class="nl-hero-panel" aria-label="Nebula Lab workspace layers">
@@ -972,6 +1002,7 @@ html.dark .nl-hero-kicker {
 
 .nl-actions {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 14px;
   margin-top: 32px;
@@ -1005,6 +1036,17 @@ html.dark .nl-hero-kicker {
   color: #fff;
 }
 
+.nl-btn-stable {
+  border: 1px solid rgba(249, 115, 22, 0.36);
+  background: rgba(249, 115, 22, 0.08);
+  color: var(--nl-brand-strong);
+}
+
+html.dark .nl-btn-stable {
+  background: rgba(249, 115, 22, 0.14);
+  color: #ffb36b;
+}
+
 .nl-btn-secondary {
   border: 1px solid var(--nl-line);
   background: rgba(255, 255, 255, 0.76);
@@ -1035,12 +1077,6 @@ html.dark .nl-btn-secondary {
 
 html.dark .nl-proof-row span {
   background: rgba(255, 255, 255, 0.05);
-}
-
-.nl-release-line {
-  margin: 18px 0 0;
-  color: var(--nl-subtle);
-  font-size: 13px;
 }
 
 .nl-hero-panel {
