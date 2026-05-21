@@ -1,31 +1,5 @@
 import { defineConfig } from 'vitepress'
 
-const RELEASES_REPO = 'TshyGO/NebulaLab-Releases'
-
-async function fetchLatestReleaseTag(): Promise<string> {
-  const controller = new AbortController()
-  const timer = setTimeout(() => controller.abort(), 5000)
-  try {
-    const headers: Record<string, string> = { Accept: 'application/vnd.github+json' }
-    if (process.env.GITHUB_TOKEN) {
-      headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`
-    }
-    const res = await fetch(`https://api.github.com/repos/${RELEASES_REPO}/releases/latest`, {
-      headers,
-      signal: controller.signal
-    })
-    if (!res.ok) return ''
-    const data = (await res.json()) as { tag_name?: string }
-    return typeof data.tag_name === 'string' ? data.tag_name : ''
-  } catch {
-    return ''
-  } finally {
-    clearTimeout(timer)
-  }
-}
-
-const appVersion = await fetchLatestReleaseTag()
-
 export default defineConfig({
   lang: 'en-US',
   title: 'Nebula Lab',
@@ -35,7 +9,6 @@ export default defineConfig({
   lastUpdated: true,
   appearance: 'dark',
   themeConfig: {
-    appVersion,
     logo: '/logo.png',
     nav: [
       { text: 'Manual', link: '/manual/' },
