@@ -1,4 +1,5 @@
 import DefaultTheme from 'vitepress/theme'
+import './custom.css'
 import { h } from 'vue'
 import NavControls from './components/NavControls.vue'
 import NavScreenControls from './components/NavScreenControls.vue'

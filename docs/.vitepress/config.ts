@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/NebulaLab-Docs/',
   cleanUrls: true,
   lastUpdated: true,
-  appearance: 'dark',
+  appearance: true,
   themeConfig: {
     logo: '/logo.png',
     outline: {

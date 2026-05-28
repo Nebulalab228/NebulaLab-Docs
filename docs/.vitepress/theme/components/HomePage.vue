@@ -868,7 +868,7 @@ onUnmounted(() => {
   --nl-brand: #f97316;
   --nl-brand-strong: #ea580c;
   --nl-brand-soft: #fff1e7;
-  --nl-bg: #fffaf5;
+  --nl-bg: #ffffff;
   --nl-bg-2: #ffffff;
   --nl-panel: rgba(255, 255, 255, 0.86);
   --nl-panel-solid: #ffffff;
