@@ -1,0 +1,212 @@
+/* ====================================================
+   NebulaLab Docs - Premium WOW UI System (VitePress Compliant)
+   Target VitePress Version: v1.x (Default Theme)
+   ==================================================== */
+
+:root {
+  /* Harmonious Color Palette */
+  --vp-c-brand-1: #f97316 !important; /* Premium Brand Orange */
+  --vp-c-brand-2: #ea580c !important;
+  --vp-c-brand-next: #ff9e64 !important;
+}
+
+/* Ensure smooth scrolling globally */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Safe margin-top for all heading anchors to prevent overlapping with floating nav */
+.vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4, .vp-doc h5, .vp-doc h6,
+.vp-doc [id] {
+  scroll-margin-top: 90px !important;
+}
+
+/* ====================================================
+   1. 3D Snapping Cylinder Sidebar Nav System
+   ==================================================== */
+
+/* Premium Frosted Glass Sidebar with specificity elevation */
+.theme-default .VPSidebar {
+  background: rgba(248, 250, 252, 0.85) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-right: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 4px 0 30px rgba(15, 23, 42, 0.02);
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  z-index: 50;
+}
+
+.dark .VPSidebar {
+  background: rgba(15, 23, 42, 0.85) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 4px 0 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Cylinder 3D Camera Container Setup - Set perspective solely on parent to reduce GPU composite layers */
+.VPSidebar .group {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 8px;
+}
+
+/* 3D Snapping Cylinder Sidebar Item Styling */
+.VPSidebarItem {
+  transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+  border-radius: 8px;
+  margin: 2px 0;
+}
+
+/* Default unselected 3D cylindrical projection */
+.VPSidebarItem.level-1 {
+  transform: rotateX(12deg) translateZ(-8px) scale(0.96);
+  opacity: 0.72;
+  background: transparent;
+  border-left: 3px solid transparent;
+}
+
+/* Sidebar item hover effect */
+.VPSidebarItem.level-1:hover {
+  transform: rotateX(0deg) translateZ(4px) scale(1.02);
+  opacity: 0.95;
+  background: rgba(249, 115, 22, 0.04);
+  border-left: 3px solid rgba(249, 115, 22, 0.4);
+}
+
+/* Active Highlight Spotlights (3D Popout & Orange Glow)
+   Targets both native .active and custom active classes for complete robustness */
+.VPSidebarItem.level-1.active,
+.VPSidebarItem.level-1.is-active,
+.VPSidebarItem.level-1:has(.active) {
+  transform: rotateX(0deg) translateZ(16px) scale(1.05);
+  opacity: 1;
+  background: rgba(249, 115, 22, 0.09);
+  border-left: 3.5px solid var(--vp-c-brand-1);
+  box-shadow: 0 4px 20px rgba(249, 115, 22, 0.08);
+}
+
+.VPSidebarItem.level-1.active .text,
+.VPSidebarItem.level-1.is-active .text,
+.VPSidebarItem.level-1:has(.active) .text {
+  color: var(--vp-c-brand-1);
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(249, 115, 22, 0.25);
+}
+
+/* Prevent text wrap & boundary clipping */
+.VPSidebarItem .text {
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+/* ====================================================
+   2. Frosted Glass Sub-drawer (Outline / ToC Showcase)
+   ==================================================== */
+
+.VPDocAside {
+  padding-left: 16px;
+}
+
+/* Transforming VitePress outline into a luxurious floating drawer */
+.VPDocAsideOutline {
+  background: rgba(248, 250, 252, 0.75) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.02);
+  transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.dark .VPDocAsideOutline {
+  background: rgba(15, 23, 42, 0.75) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Subtle physical hover pull-out micro-animation */
+.VPDocAsideOutline:hover {
+  transform: translateX(-6px);
+  box-shadow: 0 12px 40px rgba(249, 115, 22, 0.06);
+  border-color: rgba(249, 115, 22, 0.2);
+}
+
+/* Heading outline list beauty */
+.VPDocAsideOutline .outline-link {
+  position: relative !important; /* CRITICAL FIX: Establish stacking context for ::before pseudo positioning */
+  font-weight: 500;
+  transition: all 0.25s ease;
+  padding: 4px 0;
+}
+
+.VPDocAsideOutline .outline-link:hover {
+  color: var(--vp-c-brand-1);
+  padding-left: 4px;
+}
+
+/* ScrollSpy Active Heading Glow */
+.VPDocAsideOutline .outline-link.active {
+  color: var(--vp-c-brand-1);
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(249, 115, 22, 0.15);
+}
+
+/* Custom indicator dot for active heading */
+.VPDocAsideOutline .outline-link.active::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  background-color: var(--vp-c-brand-1);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--vp-c-brand-1);
+}
+
+/* ====================================================
+   3. Performance Optimizations & Adaptive Fallbacks
+   ==================================================== */
+
+/* GPU Optimization for scrolling container */
+.VPSidebar, .VPDocAsideOutline, .VPSidebarItem {
+  will-change: transform, opacity;
+}
+
+/* Performance degradation fallback for mobile/low-end devices */
+@media (max-width: 768px) {
+  .theme-default .VPSidebar {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgb(248, 250, 252) !important;
+  }
+  .dark .VPSidebar {
+    background: rgb(15, 23, 42) !important;
+  }
+  .VPSidebarItem.level-1 {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .VPSidebarItem.level-1:hover {
+    transform: none !important;
+  }
+  .VPSidebarItem.level-1.active,
+  .VPSidebarItem.level-1.is-active,
+  .VPSidebarItem.level-1:has(.active) {
+    transform: none !important;
+  }
+}
+
+/* Accessible reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .VPSidebar, .VPDocAsideOutline, .VPSidebarItem {
+    transition: none !important;
+    transform: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+}
