@@ -39,7 +39,8 @@ export default defineConfig({
             { text: '核心概念', link: '/manual/concepts' },
             { text: '数据准备', link: '/manual/data-preparation' },
             { text: '数据处理流程', link: '/manual/workflow' },
-            { text: '社区与模板', link: '/manual/community' }
+            { text: '社区与模板', link: '/manual/community' },
+            { text: '关于Pro会员', link: '/manual/pro' }
           ]
         }
       ],
