@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-07-01T05:51:55.203951+00:00",
+  "generated_at": "2026-07-01T21:47:13.261731+00:00",
   "revision": "multi-repository",
   "repositories": [
     {
@@ -8,7 +8,7 @@
       "name": "NebulaLab",
       "path": ".",
       "weight": 1.0,
-      "revision": "f6dca35b938c"
+      "revision": "051d569b0b1c"
     },
     {
       "id": "plugins",
@@ -22,7 +22,7 @@
       "name": "NebulaLab Docs",
       "path": "external/NebulaLab-Docs",
       "weight": 0.45,
-      "revision": "0a4e5401f4f0"
+      "revision": "feeec234e027"
     }
   ],
   "range": {
@@ -105,21 +105,21 @@
   },
   "totals": {
     "contributors": 4,
-    "raw_commits": 269,
-    "effective_commits": 258,
-    "weighted_churn": 117908.3,
-    "score": 1315.6197,
+    "raw_commits": 271,
+    "effective_commits": 260,
+    "weighted_churn": 120822.0,
+    "score": 1348.4236,
     "category_churn": {
-      "core_code": 87162.0,
-      "tests": 14356.4,
-      "documentation": 11868.2,
+      "core_code": 88939.5,
+      "tests": 15409.2,
+      "documentation": 11951.6,
       "configuration": 6407.7,
       "unknown": 0.0,
       "excluded": 0.0
     }
   },
   "excluded": {
-    "bot_commits": 123,
+    "bot_commits": 124,
     "zero_weight_files": 40,
     "unknown_classification_files": 134,
     "binary_files": 46
@@ -128,18 +128,18 @@
     {
       "id": "TshyGO",
       "display_name": "TshyGO",
-      "raw_commits": 243,
-      "effective_commits": 232,
-      "additions": 150632,
-      "deletions": 54986,
-      "raw_churn": 205617.0,
-      "weighted_churn": 110677.88,
-      "score": 1063.6217,
-      "files_touched": 1330,
+      "raw_commits": 245,
+      "effective_commits": 234,
+      "additions": 153744,
+      "deletions": 55364,
+      "raw_churn": 209108.0,
+      "weighted_churn": 113591.58,
+      "score": 1096.4256,
+      "files_touched": 1360,
       "category_churn": {
-        "core_code": 82061.75,
-        "tests": 12521.0,
-        "documentation": 11587.6,
+        "core_code": 83839.25,
+        "tests": 13573.8,
+        "documentation": 11671.0,
         "configuration": 6160.35,
         "unknown": 0.0,
         "excluded": 0.0
@@ -149,10 +149,10 @@
           "id": "nebulalab",
           "name": "NebulaLab",
           "weight": 1.0,
-          "raw_commits": 178,
-          "effective_commits": 173,
-          "weighted_churn": 107096.6,
-          "score": 923.9911
+          "raw_commits": 180,
+          "effective_commits": 175,
+          "weighted_churn": 110010.3,
+          "score": 956.795
         },
         {
           "id": "plugins",
@@ -174,8 +174,8 @@
         }
       ],
       "co_authored_commits": 1,
-      "share_pct": 80.85,
-      "weighted_churn_share_pct": 93.87
+      "share_pct": 81.31,
+      "weighted_churn_share_pct": 94.02
     },
     {
       "id": "wagtyq",
@@ -217,8 +217,8 @@
         }
       ],
       "co_authored_commits": 1,
-      "share_pct": 15.98,
-      "weighted_churn_share_pct": 5.61
+      "share_pct": 15.59,
+      "weighted_churn_share_pct": 5.48
     },
     {
       "id": "crema-lida",
@@ -251,8 +251,8 @@
         }
       ],
       "co_authored_commits": 0,
-      "share_pct": 2.66,
-      "weighted_churn_share_pct": 0.43
+      "share_pct": 2.6,
+      "weighted_churn_share_pct": 0.42
     },
     {
       "id": "delicious-icecream",
@@ -285,11 +285,79 @@
         }
       ],
       "co_authored_commits": 0,
-      "share_pct": 0.51,
+      "share_pct": 0.5,
       "weighted_churn_share_pct": 0.08
     }
   ],
   "commits": [
+    {
+      "hash": "051d569b0b1c5f74154aee9465b328b215c5bd8f",
+      "short_hash": "051d569b0b1c",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "TshyGO",
+      "display_name": "TshyGO",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "TshyGO"
+      ],
+      "authored_at": "2026-07-01T14:12:50+08:00",
+      "date": "2026-07-01",
+      "iso_week": "2026-W27",
+      "subject": "Redesign export workbench and fix Origin skipped samples (#316)",
+      "effective": true,
+      "additions": 3070,
+      "deletions": 330,
+      "raw_churn": 3400,
+      "file_weighted_churn": 2860.1,
+      "weighted_churn": 2860.1,
+      "files_touched": 29,
+      "unknown_files": 0,
+      "binary_files": 0,
+      "category_churn": {
+        "core_code": 1777.5,
+        "tests": 999.2,
+        "documentation": 83.4,
+        "configuration": 0.0,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
+    {
+      "hash": "6c7549eecbe139c15f53ecb0e6b692810d077ad0",
+      "short_hash": "6c7549eecbe1",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "TshyGO",
+      "display_name": "TshyGO",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "TshyGO"
+      ],
+      "authored_at": "2026-07-01T13:54:57+08:00",
+      "date": "2026-07-01",
+      "iso_week": "2026-W27",
+      "subject": "fix: prevent M10 license refresh test hang (#317)",
+      "effective": true,
+      "additions": 43,
+      "deletions": 48,
+      "raw_churn": 91,
+      "file_weighted_churn": 53.6,
+      "weighted_churn": 53.6,
+      "files_touched": 1,
+      "unknown_files": 0,
+      "binary_files": 0,
+      "category_churn": {
+        "core_code": 0.0,
+        "tests": 53.6,
+        "documentation": 0.0,
+        "configuration": 0.0,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
     {
       "hash": "383e3d97386c2577115577b34d64f7afbfe6598b",
       "short_hash": "383e3d97386c",
@@ -9448,13 +9516,22 @@
       "contributors": [
         "TshyGO"
       ],
-      "commit_count": 4,
-      "effective_count": 4,
+      "commit_count": 6,
+      "effective_count": 6,
       "categories": {
-        "other": 1,
+        "fix": 1,
+        "other": 2,
         "refactor": 3
       },
       "highlights": [
+        {
+          "hash": "051d569b0b1c5f74154aee9465b328b215c5bd8f",
+          "short_hash": "051d569b0b1c",
+          "subject": "Redesign export workbench and fix Origin skipped samples (#316)",
+          "contributor": "TshyGO",
+          "weighted_churn": 2860.1,
+          "repo_id": "nebulalab"
+        },
         {
           "hash": "383e3d97386c2577115577b34d64f7afbfe6598b",
           "short_hash": "383e3d97386c",
@@ -9480,15 +9557,15 @@
           "repo_id": "plugins"
         },
         {
-          "hash": "60654cfbcfac3d7992dea9a80365872e848da10c",
-          "short_hash": "60654cfbcfac",
-          "subject": "refactor: use centralized reusable AI PR review workflow (opencode go) (#25)",
+          "hash": "6c7549eecbe139c15f53ecb0e6b692810d077ad0",
+          "short_hash": "6c7549eecbe1",
+          "subject": "fix: prevent M10 license refresh test hang (#317)",
           "contributor": "TshyGO",
-          "weighted_churn": 31.45,
-          "repo_id": "docs"
+          "weighted_churn": 53.6,
+          "repo_id": "nebulalab"
         }
       ],
-      "summary": "本周 TshyGO 重新设计了许可证管理面板，让用户查看和管理软件授权信息时界面更清晰、操作更简便。同时，他还优化了代码审查流程，通过引入集中的自动化工具，提升了团队在合并代码前的检查效率和一致性。",
+      "summary": "本周，TshyGO 主要改进了两个用户能直接感知的功能。他重新设计了导出工作台，解决了部分样本被意外跳过的问题；同时优化了许可证管理面板的界面和操作。此外，他还统一了代码审查的自动化流程，并修复了一个可能导致测试卡住的许可证刷新问题。",
       "summary_source": "llm"
     },
     {
