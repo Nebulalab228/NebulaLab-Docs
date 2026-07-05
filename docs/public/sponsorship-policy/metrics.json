@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-07-04T21:13:21.992821+00:00",
+  "generated_at": "2026-07-05T21:19:12.559902+00:00",
   "revision": "multi-repository",
   "repositories": [
     {
@@ -22,7 +22,7 @@
       "name": "NebulaLab Docs",
       "path": "external/NebulaLab-Docs",
       "weight": 0.45,
-      "revision": "925e192840e0"
+      "revision": "3c9a20fecea3"
     }
   ],
   "range": {
@@ -119,7 +119,7 @@
     }
   },
   "excluded": {
-    "bot_commits": 127,
+    "bot_commits": 128,
     "zero_weight_files": 40,
     "unknown_classification_files": 134,
     "binary_files": 46
@@ -9770,7 +9770,7 @@
         }
       ],
       "summary": "本周TshyGO主要优化了数据导出工作台和授权管理界面，让用户操作更顺畅。他修复了社区模块的几个小问题，比如统一了测量类型的显示格式，并移除了发布表单中多余的字段。此外，团队还引入了统一的AI代码审查流程，以提升后续的代码质量。",
-      "summary_source": "llm"
+      "summary_source": "llm-cached"
     },
     {
       "iso_week": "2026-W24",
@@ -10526,7 +10526,6 @@
     }
   ],
   "weekly_digest_summary_sources": [
-    "llm",
     "llm-cached"
   ]
 }
