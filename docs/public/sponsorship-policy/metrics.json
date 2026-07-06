@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-07-05T21:19:12.559902+00:00",
+  "generated_at": "2026-07-06T21:46:43.083845+00:00",
   "revision": "multi-repository",
   "repositories": [
     {
@@ -8,7 +8,7 @@
       "name": "NebulaLab",
       "path": ".",
       "weight": 1.0,
-      "revision": "80cb260be5b8"
+      "revision": "834a3b6166e3"
     },
     {
       "id": "plugins",
@@ -22,7 +22,7 @@
       "name": "NebulaLab Docs",
       "path": "external/NebulaLab-Docs",
       "weight": 0.45,
-      "revision": "3c9a20fecea3"
+      "revision": "05fa9f6d4895"
     }
   ],
   "range": {
@@ -105,42 +105,42 @@
   },
   "totals": {
     "contributors": 4,
-    "raw_commits": 277,
-    "effective_commits": 266,
-    "weighted_churn": 123687.3,
-    "score": 1368.6262,
+    "raw_commits": 278,
+    "effective_commits": 267,
+    "weighted_churn": 123738.3,
+    "score": 1375.7676,
     "category_churn": {
       "core_code": 90326.0,
       "tests": 16888.0,
-      "documentation": 11951.6,
-      "configuration": 6407.7,
+      "documentation": 11968.4,
+      "configuration": 6441.9,
       "unknown": 0.0,
       "excluded": 0.0
     }
   },
   "excluded": {
-    "bot_commits": 128,
-    "zero_weight_files": 40,
-    "unknown_classification_files": 134,
+    "bot_commits": 129,
+    "zero_weight_files": 41,
+    "unknown_classification_files": 135,
     "binary_files": 46
   },
   "contributors": [
     {
       "id": "TshyGO",
       "display_name": "TshyGO",
-      "raw_commits": 251,
-      "effective_commits": 240,
-      "additions": 156790,
-      "deletions": 55742,
-      "raw_churn": 212532.0,
-      "weighted_churn": 116456.88,
-      "score": 1116.6282,
-      "files_touched": 1396,
+      "raw_commits": 252,
+      "effective_commits": 241,
+      "additions": 156862,
+      "deletions": 55812,
+      "raw_churn": 212674.0,
+      "weighted_churn": 116507.88,
+      "score": 1123.7697,
+      "files_touched": 1404,
       "category_churn": {
         "core_code": 85225.75,
         "tests": 15052.6,
-        "documentation": 11671.0,
-        "configuration": 6160.35,
+        "documentation": 11687.8,
+        "configuration": 6194.55,
         "unknown": 0.0,
         "excluded": 0.0
       },
@@ -149,10 +149,10 @@
           "id": "nebulalab",
           "name": "NebulaLab",
           "weight": 1.0,
-          "raw_commits": 186,
-          "effective_commits": 181,
-          "weighted_churn": 112875.6,
-          "score": 976.9976
+          "raw_commits": 187,
+          "effective_commits": 182,
+          "weighted_churn": 112926.6,
+          "score": 984.139
         },
         {
           "id": "plugins",
@@ -174,8 +174,8 @@
         }
       ],
       "co_authored_commits": 1,
-      "share_pct": 81.59,
-      "weighted_churn_share_pct": 94.15
+      "share_pct": 81.68,
+      "weighted_churn_share_pct": 94.16
     },
     {
       "id": "wagtyq",
@@ -217,7 +217,7 @@
         }
       ],
       "co_authored_commits": 1,
-      "share_pct": 15.36,
+      "share_pct": 15.28,
       "weighted_churn_share_pct": 5.35
     },
     {
@@ -251,7 +251,7 @@
         }
       ],
       "co_authored_commits": 0,
-      "share_pct": 2.56,
+      "share_pct": 2.55,
       "weighted_churn_share_pct": 0.41
     },
     {
@@ -290,6 +290,40 @@
     }
   ],
   "commits": [
+    {
+      "hash": "834a3b6166e3da71bf43f55f2525c21ff01481df",
+      "short_hash": "834a3b6166e3",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "TshyGO",
+      "display_name": "TshyGO",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "TshyGO"
+      ],
+      "authored_at": "2026-07-06T16:23:11+08:00",
+      "date": "2026-07-06",
+      "iso_week": "2026-W28",
+      "subject": "chore: release v0.8.10 (#360)",
+      "effective": true,
+      "additions": 71,
+      "deletions": 71,
+      "raw_churn": 142,
+      "file_weighted_churn": 51.0,
+      "weighted_churn": 51.0,
+      "files_touched": 8,
+      "unknown_files": 1,
+      "binary_files": 0,
+      "category_churn": {
+        "core_code": 0.0,
+        "tests": 0.0,
+        "documentation": 16.8,
+        "configuration": 34.2,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
     {
       "hash": "80cb260be5b8c59e3c9a16616129db8da9a28e35",
       "short_hash": "80cb260be5b8",
@@ -9714,6 +9748,31 @@
   ],
   "weekly_digests": [
     {
+      "iso_week": "2026-W28",
+      "start": "2026-07-06",
+      "end": "2026-07-06",
+      "contributors": [
+        "TshyGO"
+      ],
+      "commit_count": 1,
+      "effective_count": 1,
+      "categories": {
+        "chore": 1
+      },
+      "highlights": [
+        {
+          "hash": "834a3b6166e3da71bf43f55f2525c21ff01481df",
+          "short_hash": "834a3b6166e3",
+          "subject": "chore: release v0.8.10 (#360)",
+          "contributor": "TshyGO",
+          "weighted_churn": 51.0,
+          "repo_id": "nebulalab"
+        }
+      ],
+      "summary": "本周由 TshyGO 完成了 NebulaLab 项目新版本 v0.8.10 的正式发布工作。这意味着我们为项目打包并推出了一个稳定版本，团队可以基于此版本进行后续的测试或部署。",
+      "summary_source": "llm"
+    },
+    {
       "iso_week": "2026-W27",
       "start": "2026-06-29",
       "end": "2026-07-04",
@@ -10526,6 +10585,7 @@
     }
   ],
   "weekly_digest_summary_sources": [
+    "llm",
     "llm-cached"
   ]
 }
