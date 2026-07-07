@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-07-06T21:46:43.083845+00:00",
+  "generated_at": "2026-07-07T21:40:15.174206+00:00",
   "revision": "multi-repository",
   "repositories": [
     {
@@ -8,7 +8,7 @@
       "name": "NebulaLab",
       "path": ".",
       "weight": 1.0,
-      "revision": "834a3b6166e3"
+      "revision": "7ac5251864c8"
     },
     {
       "id": "plugins",
@@ -22,7 +22,7 @@
       "name": "NebulaLab Docs",
       "path": "external/NebulaLab-Docs",
       "weight": 0.45,
-      "revision": "05fa9f6d4895"
+      "revision": "83041da4c7a7"
     }
   ],
   "range": {
@@ -105,12 +105,12 @@
   },
   "totals": {
     "contributors": 4,
-    "raw_commits": 278,
-    "effective_commits": 267,
-    "weighted_churn": 123738.3,
-    "score": 1375.7676,
+    "raw_commits": 279,
+    "effective_commits": 268,
+    "weighted_churn": 123760.3,
+    "score": 1377.1702,
     "category_churn": {
-      "core_code": 90326.0,
+      "core_code": 90348.0,
       "tests": 16888.0,
       "documentation": 11968.4,
       "configuration": 6441.9,
@@ -119,7 +119,7 @@
     }
   },
   "excluded": {
-    "bot_commits": 129,
+    "bot_commits": 130,
     "zero_weight_files": 41,
     "unknown_classification_files": 135,
     "binary_files": 46
@@ -128,16 +128,16 @@
     {
       "id": "TshyGO",
       "display_name": "TshyGO",
-      "raw_commits": 252,
-      "effective_commits": 241,
-      "additions": 156862,
-      "deletions": 55812,
-      "raw_churn": 212674.0,
-      "weighted_churn": 116507.88,
-      "score": 1123.7697,
-      "files_touched": 1404,
+      "raw_commits": 253,
+      "effective_commits": 242,
+      "additions": 156882,
+      "deletions": 55814,
+      "raw_churn": 212697.0,
+      "weighted_churn": 116529.88,
+      "score": 1125.1722,
+      "files_touched": 1405,
       "category_churn": {
-        "core_code": 85225.75,
+        "core_code": 85247.75,
         "tests": 15052.6,
         "documentation": 11687.8,
         "configuration": 6194.55,
@@ -149,10 +149,10 @@
           "id": "nebulalab",
           "name": "NebulaLab",
           "weight": 1.0,
-          "raw_commits": 187,
-          "effective_commits": 182,
-          "weighted_churn": 112926.6,
-          "score": 984.139
+          "raw_commits": 188,
+          "effective_commits": 183,
+          "weighted_churn": 112948.6,
+          "score": 985.5416
         },
         {
           "id": "plugins",
@@ -174,7 +174,7 @@
         }
       ],
       "co_authored_commits": 1,
-      "share_pct": 81.68,
+      "share_pct": 81.7,
       "weighted_churn_share_pct": 94.16
     },
     {
@@ -217,7 +217,7 @@
         }
       ],
       "co_authored_commits": 1,
-      "share_pct": 15.28,
+      "share_pct": 15.27,
       "weighted_churn_share_pct": 5.35
     },
     {
@@ -290,6 +290,40 @@
     }
   ],
   "commits": [
+    {
+      "hash": "7ac5251864c8b2505027d8570d83d035eae9b7c1",
+      "short_hash": "7ac5251864c8",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "TshyGO",
+      "display_name": "TshyGO",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "TshyGO"
+      ],
+      "authored_at": "2026-07-07T20:32:55+08:00",
+      "date": "2026-07-07",
+      "iso_week": "2026-W28",
+      "subject": "fix: defer ParamInput validation to blur so multi-digit values can be typed (#372)",
+      "effective": true,
+      "additions": 21,
+      "deletions": 2,
+      "raw_churn": 23,
+      "file_weighted_churn": 22.0,
+      "weighted_churn": 22.0,
+      "files_touched": 1,
+      "unknown_files": 0,
+      "binary_files": 0,
+      "category_churn": {
+        "core_code": 22.0,
+        "tests": 0.0,
+        "documentation": 0.0,
+        "configuration": 0.0,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
     {
       "hash": "834a3b6166e3da71bf43f55f2525c21ff01481df",
       "short_hash": "834a3b6166e3",
@@ -9750,13 +9784,14 @@
     {
       "iso_week": "2026-W28",
       "start": "2026-07-06",
-      "end": "2026-07-06",
+      "end": "2026-07-07",
       "contributors": [
         "TshyGO"
       ],
-      "commit_count": 1,
-      "effective_count": 1,
+      "commit_count": 2,
+      "effective_count": 2,
       "categories": {
+        "fix": 1,
         "chore": 1
       },
       "highlights": [
@@ -9767,9 +9802,17 @@
           "contributor": "TshyGO",
           "weighted_churn": 51.0,
           "repo_id": "nebulalab"
+        },
+        {
+          "hash": "7ac5251864c8b2505027d8570d83d035eae9b7c1",
+          "short_hash": "7ac5251864c8",
+          "subject": "fix: defer ParamInput validation to blur so multi-digit values can be typed (#372)",
+          "contributor": "TshyGO",
+          "weighted_churn": 22.0,
+          "repo_id": "nebulalab"
         }
       ],
-      "summary": "本周由 TshyGO 完成了 NebulaLab 项目新版本 v0.8.10 的正式发布工作。这意味着我们为项目打包并推出了一个稳定版本，团队可以基于此版本进行后续的测试或部署。",
+      "summary": "本周，TshyGO 主要完成了两项工作。他发布了项目的新版本 v0.8.10，这标志着我们软件的一次稳定更新。同时，他修复了一个输入体验上的小问题，现在在参数框中连续输入多位数字时，系统不会再频繁报错打断输入，让填写过程更加顺畅。",
       "summary_source": "llm"
     },
     {
