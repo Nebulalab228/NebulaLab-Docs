@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-07-09T05:42:18.868747+00:00",
+  "generated_at": "2026-07-09T21:43:32.635329+00:00",
   "revision": "multi-repository",
   "repositories": [
     {
@@ -22,7 +22,7 @@
       "name": "NebulaLab Docs",
       "path": "external/NebulaLab-Docs",
       "weight": 0.45,
-      "revision": "1bd220e715ba"
+      "revision": "848910070052"
     }
   ],
   "range": {
@@ -119,7 +119,7 @@
     }
   },
   "excluded": {
-    "bot_commits": 12,
+    "bot_commits": 13,
     "zero_weight_files": 66,
     "unknown_classification_files": 227,
     "binary_files": 96
@@ -14670,7 +14670,7 @@
         }
       ],
       "summary": "本周 TshyGO 为项目发布了 v0.8.10 版本，主要完成了两项核心工作。他重新设计了软件的更新入口，让用户能更顺畅地获取新版本；同时，他全面优化了社区的登录认证界面，增强了密码重置等流程的安全性，并修复了多处用户交互细节，提升了整体使用体验。",
-      "summary_source": "llm"
+      "summary_source": "llm-cached"
     },
     {
       "iso_week": "2026-W27",
@@ -14730,7 +14730,7 @@
         }
       ],
       "summary": "本周TshyGO主要优化了项目中的导出工作台和社区管理功能。他重新设计了导出界面，解决了导出时可能遗漏样本的问题，并统一了社区页面中测量类型的显示格式。此外，他还精简了发布表单，并改进了顶部导航栏的视觉反馈。",
-      "summary_source": "llm"
+      "summary_source": "llm-cached"
     },
     {
       "iso_week": "2026-W24",
@@ -14793,7 +14793,7 @@
         }
       ],
       "summary": "这一周，TshyGO集中优化了项目模板管理和图表绘制的使用体验。他重新设计了模板管理界面，让创建和调整分析流程变得更直观；同时改进了启动速度和图表工具栏，让软件打开更快、绘图操作更顺手。此外，他还修复了若干交互细节，提升了整体稳定性。",
-      "summary_source": "llm"
+      "summary_source": "llm-cached"
     },
     {
       "iso_week": "2026-W23",
@@ -14858,7 +14858,7 @@
         }
       ],
       "summary": "本周，wagtyq 和 TshyGO 合作完成了图表模板和工作流模板的统一管理窗口，让用户在一个地方就能管理所有模板，更方便了。TshyGO 还重新整理了设置页面，按类别归类，让查找和配置选项更清晰。此外，团队优化了代码审查和发布流程的自动化，提高了日常工作的稳定性和效率。",
-      "summary_source": "llm"
+      "summary_source": "llm-cached"
     },
     {
       "iso_week": "2026-W22",
@@ -14922,7 +14922,7 @@
         }
       ],
       "summary": "本周TshyGO主要优化了数据导入的可靠性，现在系统能更准确地识别文件格式，并提供了备用方案和更简洁的界面选项。同时，他也为团队引入了多套AI代码审查工具，以提升后续开发质量。另一位成员wagtyq则修复了插件市场中的一个显示问题和插件检测功能。",
-      "summary_source": "llm"
+      "summary_source": "llm-cached"
     },
     {
       "iso_week": "2026-W21",
@@ -14984,7 +14984,7 @@
         }
       ],
       "summary": "本周，TshyGO 为赞助功能推出了新版本，改进了计算方式和界面，并新增了动态卡片与历史时间线。同时，wagtyq 新增了对特定仪器数据的导入支持，并优化了手动选择导入文件的功能。两人还共同修复了多项问题，包括更新安装、主题保存以及外部资源策略等，提升了软件的稳定性和用户体验。",
-      "summary_source": "llm"
+      "summary_source": "llm-cached"
     },
     {
       "iso_week": "2026-W20",
@@ -15226,7 +15226,7 @@
         }
       ],
       "summary": "本周 TshyGO 带领团队完善了社区脚本上传功能，用户现在可以更顺畅地提交和管理脚本，同时系统会通过 AI 辅助审核内容。wagtyq 修复了自定义背景图片的加载问题，并优化了社区页面的模板展示。此外，crema-lida 修复了一个界面表格的显示异常，提升了整体使用稳定性。",
-      "summary_source": "llm"
+      "summary_source": "llm-cached"
     },
     {
       "iso_week": "2026-W16",
@@ -15288,7 +15288,7 @@
         }
       ],
       "summary": "本周 TshyGO 主要完成了 NebulaLab 插件平台的上线准备，包括推出了插件和主题市场，让用户能更方便地浏览和安装扩展功能。同时，他优化了社区插件的安全流程，并更新了相关文档和发布流程，为即将到来的新版本做好了全面准备。",
-      "summary_source": "llm"
+      "summary_source": "llm-cached"
     },
     {
       "iso_week": "2026-W15",
@@ -15349,7 +15349,7 @@
         }
       ],
       "summary": "本周TshyGO主要完成了社区功能的第二阶段，新增了付费专业版、AI审阅和评论等高级功能。同时他大幅优化了数据导出流程，现在能更稳定地合并导出表格，并修复了软件退出和许可证管理中的多个问题。此外，他还发布了多个版本更新，并改进了项目主页的展示效果。",
-      "summary_source": "llm"
+      "summary_source": "llm-cached"
     },
     {
       "iso_week": "2026-W14",
@@ -15493,7 +15493,6 @@
     }
   ],
   "weekly_digest_summary_sources": [
-    "llm",
     "llm-cached"
   ]
 }
