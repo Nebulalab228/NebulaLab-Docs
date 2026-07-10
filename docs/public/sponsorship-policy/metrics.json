@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-07-10T05:50:54.393534+00:00",
+  "generated_at": "2026-07-10T21:19:48.902884+00:00",
   "revision": "multi-repository",
   "repositories": [
     {
@@ -8,7 +8,7 @@
       "name": "NebulaLab",
       "path": ".",
       "weight": 1.0,
-      "revision": "8155a84007b4"
+      "revision": "d0bfb395ddd7"
     },
     {
       "id": "plugins",
@@ -22,7 +22,7 @@
       "name": "NebulaLab Docs",
       "path": "external/NebulaLab-Docs",
       "weight": 0.45,
-      "revision": "1ab8ad7d6d7a"
+      "revision": "fd41cf3f785b"
     }
   ],
   "range": {
@@ -105,21 +105,21 @@
   },
   "totals": {
     "contributors": 5,
-    "raw_commits": 560,
-    "effective_commits": 547,
-    "weighted_churn": 258847.19,
-    "score": 2253.2443,
+    "raw_commits": 561,
+    "effective_commits": 548,
+    "weighted_churn": 258848.79,
+    "score": 2253.2493,
     "category_churn": {
       "core_code": 181280.0,
       "tests": 44850.8,
-      "documentation": 24198.0,
+      "documentation": 24199.6,
       "configuration": 10466.4,
       "unknown": 0.0,
       "excluded": 0.0
     }
   },
   "excluded": {
-    "bot_commits": 14,
+    "bot_commits": 15,
     "zero_weight_files": 67,
     "unknown_classification_files": 229,
     "binary_files": 96
@@ -128,18 +128,18 @@
     {
       "id": "TshyGO",
       "display_name": "TshyGO",
-      "raw_commits": 484,
-      "effective_commits": 471,
-      "additions": 283226,
+      "raw_commits": 485,
+      "effective_commits": 472,
+      "additions": 283230,
       "deletions": 94470,
-      "raw_churn": 377696.0,
-      "weighted_churn": 214862.72,
-      "score": 1739.843,
-      "files_touched": 2770,
+      "raw_churn": 377700.0,
+      "weighted_churn": 214864.32,
+      "score": 1739.848,
+      "files_touched": 2772,
       "category_churn": {
         "core_code": 145853.0,
         "tests": 36636.0,
-        "documentation": 23873.4,
+        "documentation": 23875.0,
         "configuration": 10215.15,
         "unknown": 0.0,
         "excluded": 0.0
@@ -149,10 +149,10 @@
           "id": "nebulalab",
           "name": "NebulaLab",
           "weight": 1.0,
-          "raw_commits": 417,
-          "effective_commits": 410,
-          "weighted_churn": 211152.65,
-          "score": 1594.4823
+          "raw_commits": 418,
+          "effective_commits": 411,
+          "weighted_churn": 211154.25,
+          "score": 1594.4873
         },
         {
           "id": "plugins",
@@ -324,6 +324,40 @@
     }
   ],
   "commits": [
+    {
+      "hash": "56932eb9af536604e5cca57a401f0062e4679860",
+      "short_hash": "56932eb9af53",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "TshyGO",
+      "display_name": "TshyGO",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "TshyGO"
+      ],
+      "authored_at": "2026-07-10T13:52:23+08:00",
+      "date": "2026-07-10",
+      "iso_week": "2026-W28",
+      "subject": "docs: retire feature/experiment-db branch workflow",
+      "effective": true,
+      "additions": 4,
+      "deletions": 0,
+      "raw_churn": 4,
+      "file_weighted_churn": 1.6,
+      "weighted_churn": 1.6,
+      "files_touched": 1,
+      "unknown_files": 0,
+      "binary_files": 0,
+      "category_churn": {
+        "core_code": 0.0,
+        "tests": 0.0,
+        "documentation": 1.6,
+        "configuration": 0.0,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
     {
       "hash": "464f44cadfbe8bf9a017d74d8de40fab52f8b754",
       "short_hash": "464f44cadfbe",
@@ -19382,16 +19416,16 @@
       "contributors": [
         "TshyGO"
       ],
-      "commit_count": 76,
-      "effective_count": 76,
+      "commit_count": 77,
+      "effective_count": 77,
       "categories": {
         "fix": 36,
         "feat": 9,
+        "docs": 3,
         "style": 1,
         "refactor": 1,
         "chore": 10,
-        "other": 17,
-        "docs": 2
+        "other": 17
       },
       "highlights": [
         {
@@ -19435,7 +19469,7 @@
           "repo_id": "nebulalab"
         }
       ],
-      "summary": "本周由 TshyGO 主导推进了多个核心模块的开发。他主要完成了配方模板编辑器的界面搭建、实验工作台的初步框架，以及样品详情与测量视图的构建。同时，团队也增强了机器学习数据集的基础功能，并优化了用户界面中活动栏、状态栏等处的使用体验。",
+      "summary": "本周由 TshyGO 主导推进了多个核心功能。他主要完成了配方模板编辑器的界面构建，让用户可以更方便地设计和调整实验配方；同时，实验工作台的基础框架和样本详情查看功能也已搭建完成，方便用户追溯和管理实验过程。此外，团队还优化了机器学习数据集的导出与版本管理，并修复了若干界面和权限方面的问题。",
       "summary_source": "llm"
     },
     {
@@ -19498,7 +19532,7 @@
         }
       ],
       "summary": "本周 TshyGO 主要推进了实验数据管理核心功能。他新增了实验记录与样品处理流程的创建与查询功能，并改进了数据导出工作台的界面与稳定性，让实验数据的记录和导出更顺畅。同时，他也统一了社区页面的部分显示问题，并优化了自动化代码审查流程。",
-      "summary_source": "llm"
+      "summary_source": "llm-cached"
     },
     {
       "iso_week": "2026-W26",
@@ -19558,7 +19592,7 @@
         }
       ],
       "summary": "本周由 wagtyq 负责，主要完成了配方计算功能的完善。他增加了配方计算结果的保存和查询能力，并提供了相应的外部调用接口。同时针对之前评审反馈的问题，修复了多个稳定性与安全性细节，确保功能更加可靠。",
-      "summary_source": "llm"
+      "summary_source": "llm-cached"
     },
     {
       "iso_week": "2026-W25",
@@ -19583,7 +19617,7 @@
         }
       ],
       "summary": "本周，TshyGO 为项目完成了一个重要功能：现在系统可以保存用户自定义的公式模板了。这意味着用户设置好的计算格式在下次使用时依然有效，无需重复创建，提升了使用的便捷性。",
-      "summary_source": "llm"
+      "summary_source": "llm-cached"
     },
     {
       "iso_week": "2026-W24",
@@ -19646,7 +19680,7 @@
         }
       ],
       "summary": "本周 TshyGO 主要优化了模板管理和图表体验。他重新设计了模板管理界面，让创建和使用流程更清晰；同时为图表添加了自定义工具栏，并优化了启动画面和加载速度，让软件启动和运行更流畅。此外，他还修复了一些界面交互问题，提升了整体使用的稳定性和便捷性。",
-      "summary_source": "llm"
+      "summary_source": "llm-cached"
     },
     {
       "iso_week": "2026-W23",
@@ -19711,7 +19745,7 @@
         }
       ],
       "summary": "本周，TshyGO 和 wagtyq 共同推进了配方和材料库的核心功能。TshyGO 主要完成了配方规则验证和评估引擎的搭建，并加强了权限管理；wagtyq 则实现了材料信息的增删改查与版本管理，并优化了材料属性的筛选与导入流程。两人还合作完善了统一的模板管理界面，并修复了多处系统反馈的问题。",
-      "summary_source": "llm"
+      "summary_source": "llm-cached"
     },
     {
       "iso_week": "2026-W22",
@@ -19778,7 +19812,7 @@
         }
       ],
       "summary": "本周TshyGO主要推进了实验人员身份识别和项目权限的核心功能，并优化了数据导入的体验，让系统能更准确地识别用户身份并控制访问。同时，crema-lida集中完成了实验数据库的底层搭建，包括数据迁移和启动流程，为后续存储实验数据打下了坚实基础。此外，团队还引入并整合了AI代码审查流程，以提升代码质量。",
-      "summary_source": "llm"
+      "summary_source": "llm-cached"
     },
     {
       "iso_week": "2026-W21",
