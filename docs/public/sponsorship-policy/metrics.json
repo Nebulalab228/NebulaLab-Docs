@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-07-12T07:43:40.243092+00:00",
+  "generated_at": "2026-07-12T21:06:35.671796+00:00",
   "revision": "multi-repository",
   "repositories": [
     {
@@ -8,7 +8,7 @@
       "name": "NebulaLab",
       "path": ".",
       "weight": 1.0,
-      "revision": "db1c60701afa"
+      "revision": "99e7da96f8fb"
     },
     {
       "id": "plugins",
@@ -22,7 +22,7 @@
       "name": "NebulaLab Docs",
       "path": "external/NebulaLab-Docs",
       "weight": 0.45,
-      "revision": "e60972ae17a3"
+      "revision": "50643e359412"
     }
   ],
   "range": {
@@ -105,41 +105,41 @@
   },
   "totals": {
     "contributors": 5,
-    "raw_commits": 633,
-    "effective_commits": 619,
-    "weighted_churn": 278484.44,
-    "score": 2309.1014,
+    "raw_commits": 636,
+    "effective_commits": 622,
+    "weighted_churn": 282328.44,
+    "score": 2317.9744,
     "category_churn": {
-      "core_code": 194219.0,
-      "tests": 50986.8,
-      "documentation": 24534.8,
+      "core_code": 196870.0,
+      "tests": 52176.0,
+      "documentation": 24538.6,
       "configuration": 10695.3,
       "unknown": 0.0,
       "excluded": 0.0
     }
   },
   "excluded": {
-    "bot_commits": 16,
+    "bot_commits": 17,
     "zero_weight_files": 68,
-    "unknown_classification_files": 229,
-    "binary_files": 100
+    "unknown_classification_files": 230,
+    "binary_files": 101
   },
   "contributors": [
     {
       "id": "TshyGO",
       "display_name": "TshyGO",
-      "raw_commits": 557,
-      "effective_commits": 543,
-      "additions": 301996,
-      "deletions": 100626,
-      "raw_churn": 402622.0,
-      "weighted_churn": 234499.97,
-      "score": 1795.7001,
-      "files_touched": 3196,
+      "raw_commits": 560,
+      "effective_commits": 546,
+      "additions": 305526,
+      "deletions": 101860,
+      "raw_churn": 407386.0,
+      "weighted_churn": 238343.97,
+      "score": 1804.5731,
+      "files_touched": 3248,
       "category_churn": {
-        "core_code": 158792.0,
-        "tests": 42772.0,
-        "documentation": 24210.2,
+        "core_code": 161443.0,
+        "tests": 43961.2,
+        "documentation": 24214.0,
         "configuration": 10444.05,
         "unknown": 0.0,
         "excluded": 0.0
@@ -149,10 +149,10 @@
           "id": "nebulalab",
           "name": "NebulaLab",
           "weight": 1.0,
-          "raw_commits": 488,
-          "effective_commits": 480,
-          "weighted_churn": 230783.15,
-          "score": 1647.3219
+          "raw_commits": 491,
+          "effective_commits": 483,
+          "weighted_churn": 234627.15,
+          "score": 1656.195
         },
         {
           "id": "plugins",
@@ -174,8 +174,8 @@
         }
       ],
       "co_authored_commits": 2,
-      "share_pct": 77.77,
-      "weighted_churn_share_pct": 84.21
+      "share_pct": 77.85,
+      "weighted_churn_share_pct": 84.42
     },
     {
       "id": "wagtyq",
@@ -217,8 +217,8 @@
         }
       ],
       "co_authored_commits": 2,
-      "share_pct": 17.84,
-      "weighted_churn_share_pct": 14.29
+      "share_pct": 17.77,
+      "weighted_churn_share_pct": 14.09
     },
     {
       "id": "crema-lida",
@@ -251,8 +251,8 @@
         }
       ],
       "co_authored_commits": 1,
-      "share_pct": 4.03,
-      "weighted_churn_share_pct": 1.47
+      "share_pct": 4.01,
+      "weighted_churn_share_pct": 1.45
     },
     {
       "id": "delicious-icecream",
@@ -324,6 +324,108 @@
     }
   ],
   "commits": [
+    {
+      "hash": "99e7da96f8fbffe1fe75f4f6111dac9c783b9cc1",
+      "short_hash": "99e7da96f8fb",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "TshyGO",
+      "display_name": "TshyGO",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "TshyGO"
+      ],
+      "authored_at": "2026-07-12T22:37:50+08:00",
+      "date": "2026-07-12",
+      "iso_week": "2026-W28",
+      "subject": "fix(data-prep): expose workflow apply and strengthen pane hierarchy (#413)",
+      "effective": true,
+      "additions": 1247,
+      "deletions": 985,
+      "raw_churn": 2232,
+      "file_weighted_churn": 1713.6,
+      "weighted_churn": 1713.6,
+      "files_touched": 15,
+      "unknown_files": 0,
+      "binary_files": 0,
+      "category_churn": {
+        "core_code": 1610.0,
+        "tests": 103.6,
+        "documentation": 0.0,
+        "configuration": 0.0,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
+    {
+      "hash": "8da40bec285107d638eb0f04c6ce71380ede5f77",
+      "short_hash": "8da40bec2851",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "TshyGO",
+      "display_name": "TshyGO",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "TshyGO"
+      ],
+      "authored_at": "2026-07-12T22:07:22+08:00",
+      "date": "2026-07-12",
+      "iso_week": "2026-W28",
+      "subject": "feat(formulation): calculator v3 with safe formulas (#414)",
+      "effective": true,
+      "additions": 2022,
+      "deletions": 200,
+      "raw_churn": 2222,
+      "file_weighted_churn": 1874.0,
+      "weighted_churn": 1874.0,
+      "files_touched": 29,
+      "unknown_files": 1,
+      "binary_files": 1,
+      "category_churn": {
+        "core_code": 901.0,
+        "tests": 969.2,
+        "documentation": 3.8,
+        "configuration": 0.0,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
+    {
+      "hash": "32927b9fab4037b10768cf26381b99155421535f",
+      "short_hash": "32927b9fab40",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "TshyGO",
+      "display_name": "TshyGO",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "TshyGO"
+      ],
+      "authored_at": "2026-07-12T16:39:37+08:00",
+      "date": "2026-07-12",
+      "iso_week": "2026-W28",
+      "subject": "feat(data-prep): add guided table empty state (#411)",
+      "effective": true,
+      "additions": 261,
+      "deletions": 49,
+      "raw_churn": 310,
+      "file_weighted_churn": 256.4,
+      "weighted_churn": 256.4,
+      "files_touched": 8,
+      "unknown_files": 0,
+      "binary_files": 0,
+      "category_churn": {
+        "core_code": 140.0,
+        "tests": 116.4,
+        "documentation": 0.0,
+        "configuration": 0.0,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
     {
       "hash": "db1c60701afa4fc6d0bf10a28e5e15a66a5a6c24",
       "short_hash": "db1c60701afa",
@@ -21864,14 +21966,14 @@
       "contributors": [
         "TshyGO"
       ],
-      "commit_count": 149,
-      "effective_count": 148,
+      "commit_count": 152,
+      "effective_count": 151,
       "categories": {
         "chore": 14,
         "test": 2,
-        "fix": 68,
+        "fix": 69,
+        "feat": 40,
         "docs": 4,
-        "feat": 38,
         "refactor": 5,
         "style": 1,
         "other": 17
@@ -21910,15 +22012,15 @@
           "repo_id": "nebulalab"
         },
         {
-          "hash": "e380850202a384f0dfc83e26c05f3a7c38dce30e",
-          "short_hash": "e380850202a3",
-          "subject": "[codex] Build specimen detail process and measurement views (#369)",
+          "hash": "8da40bec285107d638eb0f04c6ce71380ede5f77",
+          "short_hash": "8da40bec2851",
+          "subject": "feat(formulation): calculator v3 with safe formulas (#414)",
           "contributor": "TshyGO",
-          "weighted_churn": 1685.1,
+          "weighted_churn": 1874.0,
           "repo_id": "nebulalab"
         }
       ],
-      "summary": "本周 TshyGO 主要优化了实验和材料库的用户体验，包括改进了材料库的搜索和显示界面，并增加了实验浏览与配方运行历史对比功能。同时，他也完善了系统的基础设施，例如为实验数据库设计了新的导航栏，并调整了底部状态栏的布局。",
+      "summary": "本周 TshyGO 主要优化了实验和配方功能的使用体验。他让实验数据库的操作流程更完整，并重新设计了配方计算器，使其更安全易用；同时为材料库增加了中文别名和更紧凑的界面。此外，他还补充了匿名使用统计、本地身份设置等基础功能。",
       "summary_source": "llm"
     },
     {
