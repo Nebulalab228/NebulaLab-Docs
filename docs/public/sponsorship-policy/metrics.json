@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-07-15T21:14:38.427340+00:00",
+  "generated_at": "2026-07-16T21:15:37.389149+00:00",
   "revision": "multi-repository",
   "repositories": [
     {
@@ -8,7 +8,7 @@
       "name": "NebulaLab",
       "path": ".",
       "weight": 1.0,
-      "revision": "92a8b50dec7d"
+      "revision": "4c1c00ab17c1"
     },
     {
       "id": "plugins",
@@ -22,7 +22,7 @@
       "name": "NebulaLab Docs",
       "path": "external/NebulaLab-Docs",
       "weight": 0.45,
-      "revision": "63e7b7c503df"
+      "revision": "29ff47e5e79f"
     }
   ],
   "range": {
@@ -105,21 +105,21 @@
   },
   "totals": {
     "contributors": 5,
-    "raw_commits": 646,
-    "effective_commits": 632,
-    "weighted_churn": 297294.14,
-    "score": 2440.3088,
+    "raw_commits": 648,
+    "effective_commits": 634,
+    "weighted_churn": 305095.24,
+    "score": 2468.8612,
     "category_churn": {
-      "core_code": 208611.5,
-      "tests": 55084.4,
+      "core_code": 214501.5,
+      "tests": 56991.6,
       "documentation": 24818.4,
-      "configuration": 10731.3,
+      "configuration": 10735.2,
       "unknown": 0.0,
       "excluded": 0.0
     }
   },
   "excluded": {
-    "bot_commits": 20,
+    "bot_commits": 21,
     "zero_weight_files": 69,
     "unknown_classification_files": 230,
     "binary_files": 101
@@ -128,19 +128,19 @@
     {
       "id": "TshyGO",
       "display_name": "TshyGO",
-      "raw_commits": 570,
-      "effective_commits": 556,
-      "additions": 324356,
-      "deletions": 107490,
-      "raw_churn": 431846.0,
-      "weighted_churn": 253309.67,
-      "score": 1926.9075,
-      "files_touched": 3378,
+      "raw_commits": 572,
+      "effective_commits": 558,
+      "additions": 332144,
+      "deletions": 108474,
+      "raw_churn": 440619.0,
+      "weighted_churn": 261110.77,
+      "score": 1955.4599,
+      "files_touched": 3420,
       "category_churn": {
-        "core_code": 173184.5,
-        "tests": 46869.6,
+        "core_code": 179074.5,
+        "tests": 48776.8,
         "documentation": 24493.8,
-        "configuration": 10480.05,
+        "configuration": 10483.95,
         "unknown": 0.0,
         "excluded": 0.0
       },
@@ -149,10 +149,10 @@
           "id": "nebulalab",
           "name": "NebulaLab",
           "weight": 1.0,
-          "raw_commits": 501,
-          "effective_commits": 493,
-          "weighted_churn": 249592.85,
-          "score": 1778.5293
+          "raw_commits": 503,
+          "effective_commits": 495,
+          "weighted_churn": 257393.95,
+          "score": 1807.0817
         },
         {
           "id": "plugins",
@@ -174,8 +174,8 @@
         }
       ],
       "co_authored_commits": 2,
-      "share_pct": 78.96,
-      "weighted_churn_share_pct": 85.21
+      "share_pct": 79.2,
+      "weighted_churn_share_pct": 85.58
     },
     {
       "id": "wagtyq",
@@ -217,8 +217,8 @@
         }
       ],
       "co_authored_commits": 2,
-      "share_pct": 16.88,
-      "weighted_churn_share_pct": 13.38
+      "share_pct": 16.69,
+      "weighted_churn_share_pct": 13.04
     },
     {
       "id": "crema-lida",
@@ -251,8 +251,8 @@
         }
       ],
       "co_authored_commits": 1,
-      "share_pct": 3.81,
-      "weighted_churn_share_pct": 1.38
+      "share_pct": 3.77,
+      "weighted_churn_share_pct": 1.34
     },
     {
       "id": "delicious-icecream",
@@ -324,6 +324,74 @@
     }
   ],
   "commits": [
+    {
+      "hash": "4c1c00ab17c11670bf586e186fbf556e93b1c5bd",
+      "short_hash": "4c1c00ab17c1",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "TshyGO",
+      "display_name": "TshyGO",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "TshyGO"
+      ],
+      "authored_at": "2026-07-16T18:00:12+08:00",
+      "date": "2026-07-16",
+      "iso_week": "2026-W29",
+      "subject": "fix(ci): scope AI review concurrency group by event type (#435)",
+      "effective": true,
+      "additions": 6,
+      "deletions": 1,
+      "raw_churn": 7,
+      "file_weighted_churn": 3.9,
+      "weighted_churn": 3.9,
+      "files_touched": 1,
+      "unknown_files": 0,
+      "binary_files": 0,
+      "category_churn": {
+        "core_code": 0.0,
+        "tests": 0.0,
+        "documentation": 0.0,
+        "configuration": 3.9,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
+    {
+      "hash": "94888dbdaddfe1d52464c49579b2b05c2e35f2fe",
+      "short_hash": "94888dbdaddf",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "TshyGO",
+      "display_name": "TshyGO",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "TshyGO"
+      ],
+      "authored_at": "2026-07-16T15:19:58+08:00",
+      "date": "2026-07-16",
+      "iso_week": "2026-W29",
+      "subject": "feat(formulation): complete material-linked formula workflow (#433)",
+      "effective": true,
+      "additions": 7782,
+      "deletions": 984,
+      "raw_churn": 8766,
+      "file_weighted_churn": 7797.2,
+      "weighted_churn": 7797.2,
+      "files_touched": 41,
+      "unknown_files": 0,
+      "binary_files": 0,
+      "category_churn": {
+        "core_code": 5890.0,
+        "tests": 1907.2,
+        "documentation": 0.0,
+        "configuration": 0.0,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
     {
       "hash": "92a8b50dec7d46670297e22d3e553f9c447c5204",
       "short_hash": "92a8b50dec7d",
@@ -22302,19 +22370,27 @@
     {
       "iso_week": "2026-W29",
       "start": "2026-07-13",
-      "end": "2026-07-15",
+      "end": "2026-07-16",
       "contributors": [
         "TshyGO"
       ],
-      "commit_count": 10,
-      "effective_count": 10,
+      "commit_count": 12,
+      "effective_count": 12,
       "categories": {
+        "feat": 6,
+        "fix": 4,
         "ci": 1,
-        "feat": 5,
-        "fix": 3,
         "other": 1
       },
       "highlights": [
+        {
+          "hash": "94888dbdaddfe1d52464c49579b2b05c2e35f2fe",
+          "short_hash": "94888dbdaddf",
+          "subject": "feat(formulation): complete material-linked formula workflow (#433)",
+          "contributor": "TshyGO",
+          "weighted_churn": 7797.2,
+          "repo_id": "nebulalab"
+        },
         {
           "hash": "57e5d00defdc693d51f1dae9e76288197a424772",
           "short_hash": "57e5d00defdc",
@@ -22346,17 +22422,9 @@
           "contributor": "TshyGO",
           "weighted_churn": 963.5,
           "repo_id": "nebulalab"
-        },
-        {
-          "hash": "f3507d9c7f3f089832feea1e225ff9f08d309c54",
-          "short_hash": "f3507d9c7f3f",
-          "subject": "fix(formulation): strip real recipes from shipped examples, land v3.1 anti-drift spec assets (#416)",
-          "contributor": "TshyGO",
-          "weighted_churn": 689.8,
-          "repo_id": "nebulalab"
         }
       ],
-      "summary": "本周 TshyGO 主要推进了配方计算功能。他让配方表可以安全地保存和打开，并且切换标签页时数据也不会丢失。同时，界面增加了可折叠的经典工具栏，并集成了更强大的电子表格来编辑配方，让操作更直观。",
+      "summary": "本周 TshyGO 为配方模块带来了多项重要更新，让用户能更稳定地使用配方表功能。他完成了配方与材料的联动流程，使配方表可以安全地保存、打开和切换而不丢失内容，并加入了可折叠的经典工具栏以优化界面布局。同时，他也修复了许可检查等底层问题，提升了软件的运行稳定性。",
       "summary_source": "llm"
     },
     {
