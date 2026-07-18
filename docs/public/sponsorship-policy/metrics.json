@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-07-17T21:07:38.363653+00:00",
+  "generated_at": "2026-07-18T21:05:55.778553+00:00",
   "revision": "multi-repository",
   "repositories": [
     {
@@ -8,7 +8,7 @@
       "name": "NebulaLab",
       "path": ".",
       "weight": 1.0,
-      "revision": "c4b908972bc9"
+      "revision": "0e1d0cb858e5"
     },
     {
       "id": "plugins",
@@ -22,7 +22,7 @@
       "name": "NebulaLab Docs",
       "path": "external/NebulaLab-Docs",
       "weight": 0.45,
-      "revision": "4269899de721"
+      "revision": "f4c171b89fd2"
     }
   ],
   "range": {
@@ -105,13 +105,13 @@
   },
   "totals": {
     "contributors": 5,
-    "raw_commits": 652,
-    "effective_commits": 638,
-    "weighted_churn": 324053.24,
-    "score": 2522.2409,
+    "raw_commits": 653,
+    "effective_commits": 639,
+    "weighted_churn": 325713.64,
+    "score": 2526.2656,
     "category_churn": {
-      "core_code": 229003.0,
-      "tests": 61138.8,
+      "core_code": 230195.0,
+      "tests": 61607.2,
       "documentation": 24837.6,
       "configuration": 11025.3,
       "unknown": 0.0,
@@ -119,7 +119,7 @@
     }
   },
   "excluded": {
-    "bot_commits": 22,
+    "bot_commits": 23,
     "zero_weight_files": 70,
     "unknown_classification_files": 230,
     "binary_files": 102
@@ -128,17 +128,17 @@
     {
       "id": "TshyGO",
       "display_name": "TshyGO",
-      "raw_commits": 576,
-      "effective_commits": 562,
-      "additions": 352734,
-      "deletions": 109344,
-      "raw_churn": 462078.0,
-      "weighted_churn": 280068.77,
-      "score": 2008.8396,
-      "files_touched": 3516,
+      "raw_commits": 577,
+      "effective_commits": 563,
+      "additions": 354506,
+      "deletions": 109354,
+      "raw_churn": 463860.0,
+      "weighted_churn": 281729.17,
+      "score": 2012.8643,
+      "files_touched": 3528,
       "category_churn": {
-        "core_code": 193576.0,
-        "tests": 52924.0,
+        "core_code": 194768.0,
+        "tests": 53392.4,
         "documentation": 24513.0,
         "configuration": 10774.05,
         "unknown": 0.0,
@@ -149,10 +149,10 @@
           "id": "nebulalab",
           "name": "NebulaLab",
           "weight": 1.0,
-          "raw_commits": 507,
-          "effective_commits": 499,
-          "weighted_churn": 276351.95,
-          "score": 1860.4615
+          "raw_commits": 508,
+          "effective_commits": 500,
+          "weighted_churn": 278012.35,
+          "score": 1864.4861
         },
         {
           "id": "plugins",
@@ -174,8 +174,8 @@
         }
       ],
       "co_authored_commits": 2,
-      "share_pct": 79.65,
-      "weighted_churn_share_pct": 86.43
+      "share_pct": 79.68,
+      "weighted_churn_share_pct": 86.5
     },
     {
       "id": "wagtyq",
@@ -217,8 +217,8 @@
         }
       ],
       "co_authored_commits": 2,
-      "share_pct": 16.33,
-      "weighted_churn_share_pct": 12.28
+      "share_pct": 16.31,
+      "weighted_churn_share_pct": 12.22
     },
     {
       "id": "crema-lida",
@@ -251,7 +251,7 @@
         }
       ],
       "co_authored_commits": 1,
-      "share_pct": 3.69,
+      "share_pct": 3.68,
       "weighted_churn_share_pct": 1.26
     },
     {
@@ -285,7 +285,7 @@
         }
       ],
       "co_authored_commits": 0,
-      "share_pct": 0.27,
+      "share_pct": 0.26,
       "weighted_churn_share_pct": 0.03
     },
     {
@@ -324,6 +324,40 @@
     }
   ],
   "commits": [
+    {
+      "hash": "0e1d0cb858e51deadb6d32d46ff666a652f8607a",
+      "short_hash": "0e1d0cb858e5",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "TshyGO",
+      "display_name": "TshyGO",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "TshyGO"
+      ],
+      "authored_at": "2026-07-19T00:29:58+08:00",
+      "date": "2026-07-19",
+      "iso_week": "2026-W29",
+      "subject": "feat(storage): add portable shared data library (#446)",
+      "effective": true,
+      "additions": 1773,
+      "deletions": 9,
+      "raw_churn": 1782,
+      "file_weighted_churn": 1660.4,
+      "weighted_churn": 1660.4,
+      "files_touched": 12,
+      "unknown_files": 0,
+      "binary_files": 0,
+      "category_churn": {
+        "core_code": 1192.0,
+        "tests": 468.4,
+        "documentation": 0.0,
+        "configuration": 0.0,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
     {
       "hash": "c4b908972bc9ed1d863c1506372010028fd0b02b",
       "short_hash": "c4b908972bc9",
@@ -22506,16 +22540,16 @@
     {
       "iso_week": "2026-W29",
       "start": "2026-07-13",
-      "end": "2026-07-17",
+      "end": "2026-07-19",
       "contributors": [
         "TshyGO"
       ],
-      "commit_count": 16,
-      "effective_count": 16,
+      "commit_count": 17,
+      "effective_count": 17,
       "categories": {
+        "feat": 8,
         "fix": 6,
         "other": 2,
-        "feat": 7,
         "ci": 1
       },
       "highlights": [
@@ -22560,7 +22594,7 @@
           "repo_id": "nebulalab"
         }
       ],
-      "summary": "本周 TshyGO 主要推进了配方计算和物料库的完善。他完成了配方表的保存和切换功能，让实验数据不易丢失；同时优化了物料查询，支持离线使用和更准确的中文搜索。此外，桌面工作区的布局也得到了改进，使用起来更顺手。",
+      "summary": "本周 TshyGO 主要推进了配方计算和实验数据管理两大块。他让配方表可以像普通文档一样保存和切换，同时优化了物料库查询，现在离线也能快速找到化学品。此外，实验数据库增加了版本检查，避免因软件版本不一致导致数据打不开的问题。",
       "summary_source": "llm"
     },
     {
