@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-07-20T21:32:02.301012+00:00",
+  "generated_at": "2026-07-21T21:32:23.172652+00:00",
   "revision": "multi-repository",
   "repositories": [
     {
@@ -8,7 +8,7 @@
       "name": "NebulaLab",
       "path": ".",
       "weight": 1.0,
-      "revision": "d5b4d8061827"
+      "revision": "8c856ba7f9a6"
     },
     {
       "id": "plugins",
@@ -22,7 +22,7 @@
       "name": "NebulaLab Docs",
       "path": "external/NebulaLab-Docs",
       "weight": 0.45,
-      "revision": "aa66532647db"
+      "revision": "4fabc78e7939"
     }
   ],
   "range": {
@@ -105,13 +105,13 @@
   },
   "totals": {
     "contributors": 5,
-    "raw_commits": 676,
-    "effective_commits": 662,
-    "weighted_churn": 335530.44,
-    "score": 2634.4998,
+    "raw_commits": 678,
+    "effective_commits": 664,
+    "weighted_churn": 335848.74,
+    "score": 2645.1476,
     "category_churn": {
-      "core_code": 237510.5,
-      "tests": 64053.2,
+      "core_code": 237582.0,
+      "tests": 64300.0,
       "documentation": 24865.0,
       "configuration": 11053.2,
       "unknown": 0.0,
@@ -119,7 +119,7 @@
     }
   },
   "excluded": {
-    "bot_commits": 25,
+    "bot_commits": 26,
     "zero_weight_files": 71,
     "unknown_classification_files": 231,
     "binary_files": 102
@@ -174,23 +174,23 @@
         }
       ],
       "co_authored_commits": 2,
-      "share_pct": 80.15,
-      "weighted_churn_share_pct": 86.86
+      "share_pct": 79.82,
+      "weighted_churn_share_pct": 86.78
     },
     {
       "id": "wagtyq",
       "display_name": "wagtyq",
-      "raw_commits": 63,
-      "effective_commits": 63,
-      "additions": 33080,
-      "deletions": 17694,
-      "raw_churn": 50773.0,
-      "weighted_churn": 39884.63,
-      "score": 421.6096,
-      "files_touched": 238,
+      "raw_commits": 65,
+      "effective_commits": 65,
+      "additions": 33452,
+      "deletions": 17708,
+      "raw_churn": 51160.0,
+      "weighted_churn": 40202.93,
+      "score": 432.2574,
+      "files_touched": 248,
       "category_churn": {
-        "core_code": 33386.0,
-        "tests": 6300.4,
+        "core_code": 33457.5,
+        "tests": 6547.2,
         "documentation": 62.4,
         "configuration": 247.35,
         "unknown": 0.0,
@@ -201,10 +201,10 @@
           "id": "nebulalab",
           "name": "NebulaLab",
           "weight": 1.0,
-          "raw_commits": 60,
-          "effective_commits": 60,
-          "weighted_churn": 38880.95,
-          "score": 388.3339
+          "raw_commits": 62,
+          "effective_commits": 62,
+          "weighted_churn": 39199.25,
+          "score": 398.9817
         },
         {
           "id": "plugins",
@@ -217,8 +217,8 @@
         }
       ],
       "co_authored_commits": 2,
-      "share_pct": 16.0,
-      "weighted_churn_share_pct": 11.89
+      "share_pct": 16.34,
+      "weighted_churn_share_pct": 11.97
     },
     {
       "id": "crema-lida",
@@ -251,7 +251,7 @@
         }
       ],
       "co_authored_commits": 1,
-      "share_pct": 3.53,
+      "share_pct": 3.52,
       "weighted_churn_share_pct": 1.22
     },
     {
@@ -324,6 +324,74 @@
     }
   ],
   "commits": [
+    {
+      "hash": "fdc2e4c488af908f3e5c42c6935a7e3902055e06",
+      "short_hash": "fdc2e4c488af",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "wagtyq",
+      "display_name": "wagtyq",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "wagtyq"
+      ],
+      "authored_at": "2026-07-21T13:28:06+08:00",
+      "date": "2026-07-21",
+      "iso_week": "2026-W30",
+      "subject": "fix(formulation): handle recalculation fallback",
+      "effective": true,
+      "additions": 93,
+      "deletions": 8,
+      "raw_churn": 101,
+      "file_weighted_churn": 82.6,
+      "weighted_churn": 82.6,
+      "files_touched": 3,
+      "unknown_files": 0,
+      "binary_files": 0,
+      "category_churn": {
+        "core_code": 25.0,
+        "tests": 57.6,
+        "documentation": 0.0,
+        "configuration": 0.0,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
+    {
+      "hash": "ea0ab7276a9a3647825c6bbee00cb0b877102930",
+      "short_hash": "ea0ab7276a9a",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "wagtyq",
+      "display_name": "wagtyq",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "wagtyq"
+      ],
+      "authored_at": "2026-07-21T13:12:18+08:00",
+      "date": "2026-07-21",
+      "iso_week": "2026-W30",
+      "subject": "fix(formulation): recalculate copied specimen formulas",
+      "effective": true,
+      "additions": 280,
+      "deletions": 6,
+      "raw_churn": 286,
+      "file_weighted_churn": 235.7,
+      "weighted_churn": 235.7,
+      "files_touched": 6,
+      "unknown_files": 0,
+      "binary_files": 0,
+      "category_churn": {
+        "core_code": 46.5,
+        "tests": 189.2,
+        "documentation": 0.0,
+        "configuration": 0.0,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
     {
       "hash": "22e5d9be3ec541ed023220269586555bb134823c",
       "short_hash": "22e5d9be3ec5",
@@ -23322,17 +23390,17 @@
     {
       "iso_week": "2026-W30",
       "start": "2026-07-20",
-      "end": "2026-07-20",
+      "end": "2026-07-21",
       "contributors": [
         "TshyGO",
         "wagtyq"
       ],
-      "commit_count": 23,
-      "effective_count": 23,
+      "commit_count": 25,
+      "effective_count": 25,
       "categories": {
+        "fix": 3,
         "other": 20,
-        "feat": 2,
-        "fix": 1
+        "feat": 2
       },
       "highlights": [
         {
@@ -23376,7 +23444,7 @@
           "repo_id": "nebulalab"
         }
       ],
-      "summary": "本周 TshyGO 为配方模块增加了类似 Excel 的单元格格式设置功能，并推出了权威公式快照，让配方数据的发布和版本管理更加清晰可靠。同时，团队修复了配方编辑过程中单位切换、自动保存等多项用户体验问题，提升了操作流畅度。wagtyq 则修复了替换已关联材料时的一个具体问题。",
+      "summary": "本周 TshyGO 为配方编辑添加了类似 Excel 的单元格格式设置功能，并改进了配方发布与版本迁移的稳定性。同时，TshyGO 和 wagtyq 共同修复了多个问题，例如复制配方时计算更新、单位控制以及自动保存体验，使配方操作流程更顺畅可靠。",
       "summary_source": "llm"
     },
     {
