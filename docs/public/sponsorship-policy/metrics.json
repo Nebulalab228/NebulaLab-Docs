@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-07-21T21:32:23.172652+00:00",
+  "generated_at": "2026-07-22T21:29:43.873337+00:00",
   "revision": "multi-repository",
   "repositories": [
     {
@@ -22,7 +22,7 @@
       "name": "NebulaLab Docs",
       "path": "external/NebulaLab-Docs",
       "weight": 0.45,
-      "revision": "4fabc78e7939"
+      "revision": "00d678d55235"
     }
   ],
   "range": {
@@ -119,7 +119,7 @@
     }
   },
   "excluded": {
-    "bot_commits": 26,
+    "bot_commits": 27,
     "zero_weight_files": 71,
     "unknown_classification_files": 231,
     "binary_files": 102
@@ -23445,7 +23445,7 @@
         }
       ],
       "summary": "本周 TshyGO 为配方编辑添加了类似 Excel 的单元格格式设置功能，并改进了配方发布与版本迁移的稳定性。同时，TshyGO 和 wagtyq 共同修复了多个问题，例如复制配方时计算更新、单位控制以及自动保存体验，使配方操作流程更顺畅可靠。",
-      "summary_source": "llm"
+      "summary_source": "llm-cached"
     },
     {
       "iso_week": "2026-W29",
@@ -24482,7 +24482,6 @@
     }
   ],
   "weekly_digest_summary_sources": [
-    "llm",
     "llm-cached"
   ]
 }
