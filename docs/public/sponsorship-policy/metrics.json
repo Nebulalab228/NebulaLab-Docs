@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-07-22T21:29:43.873337+00:00",
+  "generated_at": "2026-07-23T21:21:27.491945+00:00",
   "revision": "multi-repository",
   "repositories": [
     {
@@ -8,7 +8,7 @@
       "name": "NebulaLab",
       "path": ".",
       "weight": 1.0,
-      "revision": "8c856ba7f9a6"
+      "revision": "51cd2db7ed1f"
     },
     {
       "id": "plugins",
@@ -22,7 +22,7 @@
       "name": "NebulaLab Docs",
       "path": "external/NebulaLab-Docs",
       "weight": 0.45,
-      "revision": "00d678d55235"
+      "revision": "e867dc1d42f4"
     }
   ],
   "range": {
@@ -105,21 +105,21 @@
   },
   "totals": {
     "contributors": 5,
-    "raw_commits": 678,
-    "effective_commits": 664,
-    "weighted_churn": 335848.74,
-    "score": 2645.1476,
+    "raw_commits": 685,
+    "effective_commits": 671,
+    "weighted_churn": 338613.54,
+    "score": 2658.2905,
     "category_churn": {
-      "core_code": 237582.0,
-      "tests": 64300.0,
-      "documentation": 24865.0,
+      "core_code": 239468.0,
+      "tests": 65175.6,
+      "documentation": 24868.2,
       "configuration": 11053.2,
       "unknown": 0.0,
       "excluded": 0.0
     }
   },
   "excluded": {
-    "bot_commits": 27,
+    "bot_commits": 28,
     "zero_weight_files": 71,
     "unknown_classification_files": 231,
     "binary_files": 102
@@ -128,18 +128,18 @@
     {
       "id": "TshyGO",
       "display_name": "TshyGO",
-      "raw_commits": 599,
-      "effective_commits": 585,
-      "additions": 361792,
-      "deletions": 115568,
-      "raw_churn": 477359.0,
-      "weighted_churn": 291453.37,
-      "score": 2111.4756,
-      "files_touched": 3640,
+      "raw_commits": 606,
+      "effective_commits": 592,
+      "additions": 364700,
+      "deletions": 115728,
+      "raw_churn": 480428.0,
+      "weighted_churn": 294218.17,
+      "score": 2124.6185,
+      "files_touched": 3684,
       "category_churn": {
-        "core_code": 202020.5,
-        "tests": 55808.8,
-        "documentation": 24540.4,
+        "core_code": 203906.5,
+        "tests": 56684.4,
+        "documentation": 24543.6,
         "configuration": 10801.95,
         "unknown": 0.0,
         "excluded": 0.0
@@ -149,10 +149,10 @@
           "id": "nebulalab",
           "name": "NebulaLab",
           "weight": 1.0,
-          "raw_commits": 530,
-          "effective_commits": 522,
-          "weighted_churn": 287736.55,
-          "score": 1963.0975
+          "raw_commits": 537,
+          "effective_commits": 529,
+          "weighted_churn": 290501.35,
+          "score": 1976.2403
         },
         {
           "id": "plugins",
@@ -174,8 +174,8 @@
         }
       ],
       "co_authored_commits": 2,
-      "share_pct": 79.82,
-      "weighted_churn_share_pct": 86.78
+      "share_pct": 79.92,
+      "weighted_churn_share_pct": 86.89
     },
     {
       "id": "wagtyq",
@@ -217,8 +217,8 @@
         }
       ],
       "co_authored_commits": 2,
-      "share_pct": 16.34,
-      "weighted_churn_share_pct": 11.97
+      "share_pct": 16.26,
+      "weighted_churn_share_pct": 11.87
     },
     {
       "id": "crema-lida",
@@ -251,8 +251,8 @@
         }
       ],
       "co_authored_commits": 1,
-      "share_pct": 3.52,
-      "weighted_churn_share_pct": 1.22
+      "share_pct": 3.5,
+      "weighted_churn_share_pct": 1.21
     },
     {
       "id": "delicious-icecream",
@@ -324,6 +324,244 @@
     }
   ],
   "commits": [
+    {
+      "hash": "10fbe70909d01713814f63349f96f3c89be1bd70",
+      "short_hash": "10fbe70909d0",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "TshyGO",
+      "display_name": "TshyGO",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "TshyGO"
+      ],
+      "authored_at": "2026-07-23T18:55:49+08:00",
+      "date": "2026-07-23",
+      "iso_week": "2026-W30",
+      "subject": "fix(specimens): audit structured result creation",
+      "effective": true,
+      "additions": 18,
+      "deletions": 6,
+      "raw_churn": 24,
+      "file_weighted_churn": 18.8,
+      "weighted_churn": 18.8,
+      "files_touched": 2,
+      "unknown_files": 0,
+      "binary_files": 0,
+      "category_churn": {
+        "core_code": 10.0,
+        "tests": 8.8,
+        "documentation": 0.0,
+        "configuration": 0.0,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
+    {
+      "hash": "49e41480b6b2d5132e307a30c17eb8a9bf4e03d8",
+      "short_hash": "49e41480b6b2",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "TshyGO",
+      "display_name": "TshyGO",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "TshyGO"
+      ],
+      "authored_at": "2026-07-23T17:32:57+08:00",
+      "date": "2026-07-23",
+      "iso_week": "2026-W30",
+      "subject": "fix: normalize empty metric enums",
+      "effective": true,
+      "additions": 73,
+      "deletions": 4,
+      "raw_churn": 77,
+      "file_weighted_churn": 63.0,
+      "weighted_churn": 63.0,
+      "files_touched": 5,
+      "unknown_files": 0,
+      "binary_files": 0,
+      "category_churn": {
+        "core_code": 15.0,
+        "tests": 48.0,
+        "documentation": 0.0,
+        "configuration": 0.0,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
+    {
+      "hash": "16061187b5c86c961e7a5070c44d67bb361d5c6a",
+      "short_hash": "16061187b5c8",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "TshyGO",
+      "display_name": "TshyGO",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "TshyGO"
+      ],
+      "authored_at": "2026-07-23T17:24:47+08:00",
+      "date": "2026-07-23",
+      "iso_week": "2026-W30",
+      "subject": "test: harden numeric text enum handling",
+      "effective": true,
+      "additions": 44,
+      "deletions": 3,
+      "raw_churn": 47,
+      "file_weighted_churn": 36.7,
+      "weighted_churn": 36.7,
+      "files_touched": 3,
+      "unknown_files": 0,
+      "binary_files": 0,
+      "category_churn": {
+        "core_code": 1.5,
+        "tests": 35.2,
+        "documentation": 0.0,
+        "configuration": 0.0,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
+    {
+      "hash": "aa4bcb4e11e40bb4b5a33a3a728685e4cc563ff6",
+      "short_hash": "aa4bcb4e11e4",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "TshyGO",
+      "display_name": "TshyGO",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "TshyGO"
+      ],
+      "authored_at": "2026-07-23T17:16:31+08:00",
+      "date": "2026-07-23",
+      "iso_week": "2026-W30",
+      "subject": "fix: address automated result review feedback",
+      "effective": true,
+      "additions": 22,
+      "deletions": 10,
+      "raw_churn": 32,
+      "file_weighted_churn": 25.0,
+      "weighted_churn": 25.0,
+      "files_touched": 4,
+      "unknown_files": 0,
+      "binary_files": 0,
+      "category_churn": {
+        "core_code": 17.0,
+        "tests": 8.0,
+        "documentation": 0.0,
+        "configuration": 0.0,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
+    {
+      "hash": "be76928984a70800a138bff2be1c106325950c3f",
+      "short_hash": "be76928984a7",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "TshyGO",
+      "display_name": "TshyGO",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "TshyGO"
+      ],
+      "authored_at": "2026-07-23T17:09:18+08:00",
+      "date": "2026-07-23",
+      "iso_week": "2026-W30",
+      "subject": "feat: add cross-specimen result queries and text enums",
+      "effective": true,
+      "additions": 1090,
+      "deletions": 101,
+      "raw_churn": 1191,
+      "file_weighted_churn": 1052.6,
+      "weighted_churn": 1052.6,
+      "files_touched": 15,
+      "unknown_files": 0,
+      "binary_files": 0,
+      "category_churn": {
+        "core_code": 701.0,
+        "tests": 351.6,
+        "documentation": 0.0,
+        "configuration": 0.0,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
+    {
+      "hash": "ffafc8117647caee09a3a44396b0c6235c4e84ec",
+      "short_hash": "ffafc8117647",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "TshyGO",
+      "display_name": "TshyGO",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "TshyGO"
+      ],
+      "authored_at": "2026-07-23T15:39:40+08:00",
+      "date": "2026-07-23",
+      "iso_week": "2026-W30",
+      "subject": "fix specimen notes and attachments test fixtures",
+      "effective": true,
+      "additions": 71,
+      "deletions": 15,
+      "raw_churn": 86,
+      "file_weighted_churn": 62.8,
+      "weighted_churn": 62.8,
+      "files_touched": 1,
+      "unknown_files": 0,
+      "binary_files": 0,
+      "category_churn": {
+        "core_code": 0.0,
+        "tests": 62.8,
+        "documentation": 0.0,
+        "configuration": 0.0,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
+    {
+      "hash": "16cf9378d435abb0780123c04a01c955cb65c761",
+      "short_hash": "16cf9378d435",
+      "repo_id": "nebulalab",
+      "repo_name": "NebulaLab",
+      "repo_weight": 1.0,
+      "contributor_id": "TshyGO",
+      "display_name": "TshyGO",
+      "co_authors": [],
+      "all_contributor_ids": [
+        "TshyGO"
+      ],
+      "authored_at": "2026-07-20T10:49:33+08:00",
+      "date": "2026-07-20",
+      "iso_week": "2026-W30",
+      "subject": "feat: add M1 structured specimen results (#439)",
+      "effective": true,
+      "additions": 1590,
+      "deletions": 22,
+      "raw_churn": 1612,
+      "file_weighted_churn": 1505.9,
+      "weighted_churn": 1505.9,
+      "files_touched": 14,
+      "unknown_files": 0,
+      "binary_files": 0,
+      "category_churn": {
+        "core_code": 1141.5,
+        "tests": 361.2,
+        "documentation": 3.2,
+        "configuration": 0.0,
+        "unknown": 0.0,
+        "excluded": 0.0
+      }
+    },
     {
       "hash": "fdc2e4c488af908f3e5c42c6935a7e3902055e06",
       "short_hash": "fdc2e4c488af",
@@ -23390,17 +23628,18 @@
     {
       "iso_week": "2026-W30",
       "start": "2026-07-20",
-      "end": "2026-07-21",
+      "end": "2026-07-23",
       "contributors": [
         "TshyGO",
         "wagtyq"
       ],
-      "commit_count": 25,
-      "effective_count": 25,
+      "commit_count": 32,
+      "effective_count": 32,
       "categories": {
-        "fix": 3,
-        "other": 20,
-        "feat": 2
+        "other": 21,
+        "feat": 4,
+        "fix": 6,
+        "test": 1
       },
       "highlights": [
         {
@@ -23420,6 +23659,14 @@
           "repo_id": "nebulalab"
         },
         {
+          "hash": "16cf9378d435abb0780123c04a01c955cb65c761",
+          "short_hash": "16cf9378d435",
+          "subject": "feat: add M1 structured specimen results (#439)",
+          "contributor": "TshyGO",
+          "weighted_churn": 1505.9,
+          "repo_id": "nebulalab"
+        },
+        {
           "hash": "abd83ff361cf00658da17276eb92d544c42a1344",
           "short_hash": "abd83ff361cf",
           "subject": "add component registry and anchor lifecycle",
@@ -23434,18 +23681,10 @@
           "contributor": "TshyGO",
           "weighted_churn": 1389.7,
           "repo_id": "nebulalab"
-        },
-        {
-          "hash": "fbcee05927e4a205d705cc3246570d5d308f2b1e",
-          "short_hash": "fbcee05927e4",
-          "subject": "feat(storage): 实验库双层版本兼容与安全默认目录 (#450)",
-          "contributor": "TshyGO",
-          "weighted_churn": 857.9,
-          "repo_id": "nebulalab"
         }
       ],
-      "summary": "本周 TshyGO 为配方编辑添加了类似 Excel 的单元格格式设置功能，并改进了配方发布与版本迁移的稳定性。同时，TshyGO 和 wagtyq 共同修复了多个问题，例如复制配方时计算更新、单位控制以及自动保存体验，使配方操作流程更顺畅可靠。",
-      "summary_source": "llm-cached"
+      "summary": "本周 TshyGO 为配方模块增加了类似 Excel 的单元格格式设置对话框，并引入了结构化样品结果查询功能，让数据查看更直观。同时，我们优化了配方编辑和保存流程，提升了操作的流畅性。wagtyq 协助修复了配方复制时的计算问题，确保数据准确性。整体上，团队进一步打磨了配方相关功能的用户体验。",
+      "summary_source": "llm"
     },
     {
       "iso_week": "2026-W29",
@@ -24482,6 +24721,7 @@
     }
   ],
   "weekly_digest_summary_sources": [
+    "llm",
     "llm-cached"
   ]
 }
